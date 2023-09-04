@@ -42,7 +42,8 @@ function startgamee() {
     }
     else if (sum === 21) {
         message = "Wow you have got BlackJacked ! 🤩"
-        blackjack = true
+        blackjack = false
+        isalive = false
         console.log(blackjack)
     }
     else {
