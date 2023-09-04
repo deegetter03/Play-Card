@@ -23,6 +23,7 @@ function getrandomnum() {
 
 function startgame() {
     isalive = true
+    blackjack=false
     let firstcard = getrandomnum()
     let secondcard = getrandomnum()
     cards = [firstcard, secondcard]
