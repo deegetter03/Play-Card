@@ -23,7 +23,6 @@ function getrandomnum() {
 
 function startgame() {
     isalive = true
-    blackjack=false
     let firstcard = getrandomnum()
     let secondcard = getrandomnum()
     cards = [firstcard, secondcard]
@@ -43,7 +42,8 @@ function startgamee() {
     }
     else if (sum === 21) {
         message = "Wow you have got BlackJacked ! 🤩"
-        blackjack = true
+        blackjack = false
+        isalive = false
         console.log(blackjack)
     }
     else {
